@@ -1,3 +1,14 @@
+import discord
+
+cl = discord.Client()
+token = '***'
+
+@cl.event
+async def on_ready():
+    print('Logged in')
+
+cl.run(token)
+
 from discord.ext import commands
 import os
 import traceback
